@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -51,7 +51,7 @@ namespace Entidades
         /// Muestra los documentos en el escaner.
         /// </summary>
         /// <param name="e">Escáner.</param>
-        /// <param name="extension">Extension procesada total.</param>
+        /// <param name="extension">Extensión procesada total.</param>
         /// <param name="cantidad">Items unicos procesados.</param>
         /// <param name="resumen">Resumen de los datos de los Items.</param>
         public static void MostrarEnEscaner(Escaner e, out int extension, out int cantidad, out string resumen)
@@ -61,14 +61,14 @@ namespace Entidades
 
         public static void MostrarEnRevision(Escaner e, out int extension, out int cantidad, out string resumen)
         {
-            MostrarDocumentosPorEstado(e, Documento.Paso.EnEscaner, out extension, out cantidad, out resumen);
+            MostrarDocumentosPorEstado(e, Documento.Paso.EnRevision, out extension, out cantidad, out resumen);
         }
 
         /// <summary>
         /// Muestra los documentos terminados en el escaner.
         /// </summary>
         /// <param name="e">Escáner.</param>
-        /// <param name="extension">Extension procesada total.</param>
+        /// <param name="extension">Extensión procesada total.</param>
         /// <param name="cantidad">Items unicos procesados.</param>
         /// <param name="resumen">Resumen de los datos de los Items.</param>
         public static void MostrarTerminados(Escaner e, out int extension, out int cantidad, out string resumen)
